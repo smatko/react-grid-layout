@@ -757,6 +757,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
 
     this.removeDroppingPlaceholder();
 
+    this.props.onLayoutChange(layout);
     this.props.onDrop(layout, item, e);
   };
 
